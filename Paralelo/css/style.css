@@ -1,0 +1,243 @@
+/* Estilos gerais do corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão ao redor do corpo da página, garantindo que o layout use toda a largura e altura disponíveis */
+    padding: 0; /* Remove o preenchimento padrão ao redor do corpo da página */
+    width: 100%; /* Define a largura do corpo para 100% da largura da tela, garantindo que ocupe toda a área horizontal disponível */
+    height: 600px; /* Define a altura do corpo para 600 pixels */
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    margin: 0 auto; /* Centraliza horizontalmente o menu de navegação dentro do contêiner pai */
+    position: absolute; /* Posiciona o menu de navegação de forma absoluta, permitindo posicionamento exato em relação ao contêiner pai */
+    top: 15px; /* Define a distância do menu em relação ao topo da página */
+    width: 100%; /* Define a largura do menu de navegação para 100% da tela */
+    min-width: 1080px; /* Define a largura mínima do menu de navegação para 1080 pixels */
+}
+
+/* Estilos para o contêiner principal do menu de navegação */
+nav #mainMenu-geral {
+    max-width: 1480px; /* Define a largura máxima do contêiner do menu de navegação para 1480 pixels */
+    height: 125px; /* Define a altura do contêiner do menu de navegação */
+    margin: 0 auto; /* Centraliza o contêiner do menu de navegação horizontalmente */
+    background-color: black; /* Define a cor de fundo do menu de navegação como preto */
+}
+
+/* Estilos para a lista de itens do menu de navegação */
+nav ul {
+    display: flex; /* Usa o layout flexível para organizar os itens da lista em linha horizontal */
+    flex-direction: row; /* Define a direção dos itens como linha (horizontal) */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilos para cada item da lista no menu de navegação */
+nav ul li {
+    list-style: none; /* Remove a marcação padrão (pontos ou números) dos itens da lista */
+    height: 125px; /* Define a altura dos itens da lista para coincidir com a altura do menu de navegação */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades quando alteradas */
+}
+
+/* Estilos para o item da lista quando o mouse está sobre ele */
+nav ul li:hover {
+    background-color: #444444; /* Muda a cor de fundo dos itens da lista para cinza escuro quando o mouse está sobre eles */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para a mudança de cor de fundo */
+}
+
+
+
+
+
+/* Estilos para o texto do número do item da lista */
+nav ul li span {
+    float: left; /* Alinha o texto do número do item à esquerda do contêiner do item da lista */
+    color: #868686; /* Define a cor do texto como cinza claro */
+    font-size: 11px; /* Define o tamanho da fonte do texto */
+    margin: 58px 3px 53px 15px; /* Define a margem ao redor do texto para posicionamento adequado */
+}
+
+
+
+
+/* Estilos para os links dentro dos itens da lista no menu de navegação */
+nav ul li a {
+    color: white; /* Define a cor do texto dos links como branco */
+    font-size: 16px; /* Define o tamanho da fonte dos links */
+    text-transform: uppercase; /* Transforma o texto dos links em maiúsculas */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 53px 15px 53px 0; /* Define o preenchimento interno dos links para ajuste do layout */
+    float: left; /* Alinha os links à esquerda dos itens da lista */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades quando alteradas */
+}
+
+/* Estilos para os links quando o mouse está sobre eles */
+nav ul li a:hover {
+    text-decoration: line-through; /* Adiciona uma linha através do texto dos links ao passar o mouse sobre eles */
+    color: yellow; /* Muda a cor do texto dos links para amarelo ao passar o mouse sobre eles */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para a mudança de cor e decoração do texto */
+}
+
+/* Estilos para o texto dentro dos links */
+nav ul li a span {
+    font-size: 11px; /* Define o tamanho da fonte do texto dentro dos links */
+    color: #868686; /* Define a cor do texto como cinza claro */
+    margin: 5px 3px 0 0; /* Define a margem ao redor do texto para ajuste do layout */
+}
+
+
+/* Estilos para a imagem do logo no menu de navegação */
+nav #logo img {
+    height: 75px; /* Define a altura da imagem do logo */
+    margin: 25px; /* Adiciona margem ao redor da imagem do logo para espaçamento */
+    float: left; /* Alinha a imagem do logo à esquerda do contêiner do menu de navegação */
+}
+
+
+
+
+/* Estilos para o menu principal dentro do contêiner de navegação */
+nav #mainMenu {
+    float: right; /* Alinha o menu principal à direita do contêiner de navegação */
+}
+
+
+
+
+/* Estilos para fontes usando a fonte Montserrat */
+.montserrat, nav ul li a {
+    font-family: "Montserrat", sans-serif; /* Define a fonte dos textos como Montserrat */
+    font-optical-sizing: auto; /* Ajusta o tamanho da fonte para melhorar a legibilidade em diferentes tamanhos */
+    font-weight: 400; /* Define o peso da fonte como normal */
+    font-style: normal; /* Define o estilo da fonte como normal */
+}
+
+
+
+
+/* Estilos para o cabeçalho da página */
+header {
+    width: 100%; /* Define a largura do cabeçalho para 100% da largura da tela */
+    height: 600px; /* Define a altura do cabeçalho para 600 pixels */
+}
+
+
+
+/* Estilos para a imagem de slide no cabeçalho */
+header .slide {
+    width: 100%; /* Define a largura da imagem do slide para 100% da largura do cabeçalho */
+    height: 600px; /* Define a altura da imagem do slide para 600 pixels */
+    object-fit: cover; /* Faz com que a imagem cubra toda a área do contêiner sem distorcer a proporção */
+    position: absolute; /* Posiciona a imagem de forma absoluta em relação ao cabeçalho */
+    z-index: -1; /* Define a ordem de empilhamento para garantir que a imagem fique atrás de outros elementos do cabeçalho */
+}
+
+
+
+
+/* Estilos para o contêiner de texto do slide */
+header #slide-bar {
+    margin-top: 320px; /* Define a distância do topo do contêiner do texto em relação ao topo do cabeçalho */
+    min-height: 280px; /* Define a altura mínima do contêiner de texto */
+    float: left; /* Alinha o contêiner de texto à esquerda do cabeçalho */
+    background-image: url(../img/slides/yellow-bg.png); /* Define a imagem de fundo do contêiner de texto */
+    width: 625px; /* Define a largura do contêiner de texto */
+    padding: 0 0 0 60px; /* Define o preenchimento interno do contêiner de texto para ajuste do layout */
+}
+
+
+
+
+/* Estilos para o texto do slide */
+header #txt_slide {
+    font-family: "Montserrat", sans-serif; /* Define a fonte do texto como Montserrat */
+    font-size: 14px; /* Define o tamanho da fonte do texto */
+    margin-top: 50px; /* Define a margem superior do texto */
+    color: white; /* Define a cor do texto como branco */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+
+
+
+/* Estilos para o título do slide */
+header #titulo_slide {
+    font-size: 50px; /* Define o tamanho da fonte do título */
+    color: white; /* Define a cor do título como branco */
+    font-family: "Montserrat", sans-serif; /* Define a fonte do título como Montserrat */
+}
+
+
+
+
+/* Estilos para o subtítulo do slide */
+header #titulo_slide h4 {
+    margin: 30px 0; /* Define a margem ao redor do subtítulo */
+}
+
+
+
+
+/* Estilos para as setas no cabeçalho */
+header .seta {
+    float: left; /* Alinha as setas à esquerda do cabeçalho */
+}
+
+
+
+/* Estilos para a seta à direita no cabeçalho */
+header .direita {
+    margin-left: 20px; /* Adiciona margem à esquerda da seta à direita */
+}
+
+
+
+
+/* Estilos para o separador */
+.separador {
+    width: 100%; /* Define a largura do separador para 100% da largura da tela */
+    height: 300px; /* Define a altura do separador para 300 pixels */
+    background-image: url(../img/divider-dark.png); /* Define a imagem de fundo do separador */
+    background-repeat: repeat-x; /* Faz com que a imagem de fundo se repita horizontalmente */
+}
+
+/* Estilos para a seção de frase */
+
+
+
+#frase {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 300px; /* Define a altura da seção */
+}
+
+
+
+/* Estilos para os ícones dentro da seção de frase */
+#frase .icons {
+    display: flex; /* Organiza os ícones em linha horizontal */
+    margin-bottom: 10px; /* Adiciona espaço entre os ícones e o texto */
+}
+
+
+
+
+/* Estilos para cada ícone */
+#frase .icons span {
+    font-size: 120px; /* Aumenta o tamanho dos ícones */
+    color: #e7a920; /* Muda a cor dos ícones para amarelo */
+    margin: 0 10px; /* Adiciona espaço entre os ícones */
+}
+
+
+
+
+/* Estilos para o texto na seção de frase */
+#frase p {
+    font-size: 28px; /* Define o tamanho da fonte do texto */
+    font-weight: 300; /* Define o peso da fonte como leve */
+    color: black; /* Define a cor do texto como preto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-family: "Montserrat", sans-serif; /* Define a fonte do texto como Montserrat */
+}
